@@ -1,10 +1,10 @@
 databaseChangeLog:
   - changeSet:
       id: Create custamer table
-      author: Nicat alverdiyev
+      author: Nicat Alverdiyev
       changes:
         - createTable:
-            tableName: costomers
+            tableName: customers
             columns:
               - column:
                   name: id
@@ -14,7 +14,7 @@ databaseChangeLog:
                     nullable: false
                     primaryKey: true
               - column:
-                  name: fullname
+                  name: full_name
                   type: VARCHAR(50)
                   constraints:
                     nullable: false
@@ -33,3 +33,4 @@ databaseChangeLog:
                   type: DECIMAL
                   constraints:
                     nullable: false
+
