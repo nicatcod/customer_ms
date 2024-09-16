@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: Create custamer table
+      author: Nicat alverdiyev
+      changes:
+        - createTable:
+            tableName: costomers
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    nullable: false
+                    primaryKey: true
+              - column:
+                  name: fullname
+                  type: VARCHAR(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: age
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+              - column:
+                  name: pin
+                  type: VARCHAR(4)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: balance
+                  type: DECIMAL
+                  constraints:
+                    nullable: false
