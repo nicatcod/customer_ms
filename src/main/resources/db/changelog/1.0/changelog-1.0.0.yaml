@@ -33,4 +33,40 @@ databaseChangeLog:
                   type: DECIMAL
                   constraints:
                     nullable: false
+  - changeSet:
+      id: 2
+      author: Nicat Alverdiyev
+      changes:
+        - renameColumn:
+            tableName: customers
+            oldColumnName: full_name
+            newColumnName: name
+            columnDataType: VARCHAR(50)
+  - changeSet:
+      id: 3
+      author: Nicat Alverdiyev
+      changes:
+        - addColumn:
+            tableName: customers
+            columns:
+              - column:
+                  name: surname
+                  type: VARCHAR(50)
+  - changeSet:
+      id: 4
+      author: Nicat Alverdiyev
+      changes:
+        - dropColumn:
+            columnName: surname
+            tableName: customers
+  - changeSet:
+      id: 5
+      author: Nicat Alverdiyev
+      changes:
+        - renameColumn:
+            tableName: customers
+            oldColumnName: name
+            newColumnName: full_name
+            columnDataType: VARCHAR(50)
+
 

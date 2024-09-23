@@ -14,7 +14,9 @@ import static lombok.AccessLevel.PRIVATE;
 @NoArgsConstructor
 @FieldDefaults(level = PRIVATE)
 public class SaveCustomerDto {
+
     String fullName;
+
     Integer age;
     String pin;
     BigDecimal balance;
