@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 3
+      author: Nicat Alverdiyev
+      changes:
+        - addColumn:
+            tableName: customers
+            columns:
+              - column:
+                  name: surname
+                  type: VARCHAR(50)

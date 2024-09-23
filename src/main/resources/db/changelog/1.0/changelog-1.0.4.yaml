@@ -1,10 +1,10 @@
 databaseChangeLog:
   - changeSet:
-      id: 2
+      id: 5
       author: Nicat Alverdiyev
       changes:
         - renameColumn:
             tableName: customers
-            oldColumnName: full_name
-            newColumnName: name
+            oldColumnName: name
+            newColumnName: full_name
             columnDataType: VARCHAR(50)
