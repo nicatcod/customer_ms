@@ -4,6 +4,8 @@ import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.math.BigDecimal;
+import java.time.Instant;
+import java.time.LocalDate;
 
 import static jakarta.persistence.GenerationType.IDENTITY;
 import static lombok.AccessLevel.PRIVATE;
@@ -20,9 +22,13 @@ public class CustomerEntity {
     @Id
     @GeneratedValue(strategy = IDENTITY)
     Long id;
-
     String fullName;
     Integer age;
     String pin;
     BigDecimal balance;
+    String birth_day;
+
+    public LocalDate getBirthDate() {
+        return null;
+    }
 }

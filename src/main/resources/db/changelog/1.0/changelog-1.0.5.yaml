@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 5
+      author: Nicat Alverdiyev
+      changes:
+        - addColumn:
+            tableName: customers
+            columns:
+              - column:
+                  name: birth_day
+                  type: VARCHAR(50)

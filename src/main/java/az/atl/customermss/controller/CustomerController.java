@@ -33,4 +33,5 @@ public class CustomerController {
         customerService.reduceBalance(id, totalAmount);
         return ResponseEntity.status(NO_CONTENT).build();
     }
+
 }
